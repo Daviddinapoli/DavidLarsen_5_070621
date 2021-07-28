@@ -1,0 +1,47 @@
+header{
+    background-color: $cd-primary;
+    margin-top: 1em;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+    img{
+        padding: 0.5em 0.5em 1em;
+        max-width: 150px;
+    }
+    .cart{
+        margin: 1em 3em;
+        border-radius: 5px;
+        transition: 800ms;
+        display: flex;
+        padding: 0.5em;
+        flex-direction: row-reverse;
+        color: black;
+        p{
+            color: black;
+            margin-bottom: 0;
+        }
+        span{
+            color: black; 
+            position: relative;
+            bottom: 15px;
+            left: 5px;
+            @media all and (max-width: 330px){
+                left: -5px;
+            }
+        }
+        i{
+           margin-top: 0.2em;
+        }
+        &:hover{
+            background-color: darken($cd-primary,3%);
+            i{
+                transition: 800ms;
+                background: linear-gradient(-50deg, $cd-secondary, $cd-tertiary);
+                background-clip: text;
+                color: transparent;
+            }
+        }
+    }
+}

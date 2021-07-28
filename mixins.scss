@@ -1,0 +1,38 @@
+@keyframes bigup{
+    0%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes drive{
+    0%{
+        transform: rotate(0deg);
+    }
+    1%{
+        transform: rotate(390deg);
+    }
+    2%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes appearsection{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+      transform: translateX(2%);
+    }
+  
+  }

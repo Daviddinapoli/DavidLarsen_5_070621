@@ -1,0 +1,35 @@
+/* ----- GLOBAL ----- */
+@import "./Utils/variables";
+@import "./Base/font";
+
+ @import "./Utils/mixins";
+/* ++++ GLOBAL +++ */
+
+/* ----- HEDEAR ----- */
+ @import "./Layout/header";
+/* ++++ HEDEAR +++ */
+
+
+/* ----- FOOTER ----- */
+ @import "./Layout/footer";
+/* ++++ FOOTER +++ */
+
+/* OTHER */
+// @import "./Composants/spinner";
+// @import "./Composants/btnheart";
+
+/* ++++ OTHER */
+
+
+
+/* ----- PAGE accueil ----- */
+ @import "./Pages/accueil";
+ @import "./Pages/shoppingCart";
+ @import "./Pages/product";
+ @import "./Pages/purchasConfirm";
+// @import "./Pages/extrarest";
+/* ++++ PAGE accueil +++ */
+
+body {
+    background-color: lightgrey;
+}

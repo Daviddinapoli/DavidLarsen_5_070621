@@ -1,0 +1,142 @@
+<!Doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--SCRIPTS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="Style.css" type="text/css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/634678aec6.js" crossorigin="anonymous"></script>
+        <!--JQUERY + POPPER + JS -->
+        <script src="/functions.js" defer></script>
+        <script src="/shoppingcart.js" defer></script>
+        <script src="/form.js" defer></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+
+        <!--SCRIPTS-->
+        <title>Your Orinoco Shopping cart</title>
+    </head>
+    <div class="container">
+        <header>
+            <a href="homepage.html"><img src="/images/Orinocologoimg.png" alt="logo orinoco" class="h-20 "></a>
+            <nav>
+                <a href="cart.html" id="shoppingCart">
+                    <div class="cart">
+                        <p>Basket</p>
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cartIndex"></span>
+                    </div>
+                </a>
+            </nav>
+        </header>
+        <main>
+            <div class="tilte2">
+                <h1>Welcome to your shopping cart</h1>
+                <div class="tilte2_recap">
+                    <p id="impatient"></p>
+                </div>
+            </div>
+            <section class="bg-color-deg recapitulatif">
+                <h2>Your items: </h2>
+                <div class="recapitulatif_all" id="recapAll">
+                    <p id="emptyBasket"></p>
+                </div>
+                <div class="recapitulatif_price">
+                    <p>Total : &nbsp;</p>
+                    <p id="allcost"></p>
+                </div>
+            </section>
+            <section class="formulaire">
+                <h2>Billing form</h2>
+                <div class="formulaire-real">
+                    <form action="Confirmation.html" method="GET">
+                        <div class="formulaire-real-firstname">
+                            <label for="firstName">First name:</label>
+                            <input type="text" id="firstName" name="user_firstname" title="Insert your First name"
+                                placeholder="Kyle">
+                            <p id="error1" class="error"></p>
+                        </div>
+                        <div class="formulaire-real-lastname">
+                            <label for="lastName">Last name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="text" id="lastName" name="user_lastname" title="Insert your family name"
+                                placeholder=" Brown">
+                            <p id="error2" class="error"></p>
+                        </div>
+                        <div class="formulaire-real-city">
+                            <label for="city">City :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="text" id="city" name="user_city" title="Insert ypur city here"
+                                placeholder=" Los Angeles">
+                            <p id="error3" class="error"></p>
+                        </div>
+                        <div class="formulaire-real-adress">
+                            <label for="address">Address :</label>
+                            <input type="text" id="address" name="user_address" title="Insert your postal address"
+                                placeholder=" 15 Rodeo Drive">
+                            <p id="error4" class="error"></p>
+                        </div>
+                        <div class="formulaire-real-email">
+                            <label for="mail">E-mail : &nbsp;&nbsp;</label>
+                            <input type="text" id="mail" name="user_mail" title="Add a valid Email address"
+                                placeholder=" Kylebrown@gmail.com">
+                            <p id="error5" class="error"></p>
+                        </div>
+                        <div class="formulaire-real-button">
+                            <button type="submit" id="sumbutton"><a href="Confirmation.html"></a> Confirm and
+                                Order</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+        <footer class="bloc" id="foot">
+            <div class="container bloc-sm">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="text-center">
+                            Orinoco, shopping at your fingertips<br>
+                        </h3>
+                        <p class="text-center"> Follow on Social media to keep updated with the best offers and
+                            promotions! !</p>
+                        <nav class="row row-no-gutters social">
+                            <div class="col-sm-4 ico">
+                                <div class="text-center">
+                                    <a aria-label="twitter" class="social" href="https://twitter.com/orinoco_e_comm"
+                                        target="_blank"><span class="fa fa-twitter icon-md"></span></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 ico">
+                                <div class="text-center">
+                                    <a aria-label="facebook" class="social" href="https://www.facebook.com/OrinocoShop/"
+                                        target="_blank"><span class="fa fa-facebook icon-md"></span></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 ico">
+                                <div class="text-center">
+                                    <a aria-label="instagram" class="social"
+                                        href="https://www.instagram.com/orinoco_e_commerce/" target="_blank"><span
+                                            class="fa fa-instagram icon-md"></span></a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    </body>
+
+</html>
